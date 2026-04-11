@@ -1,0 +1,37 @@
+-- Заявки
+CREATE TABLE IF NOT EXISTS requests (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  phone VARCHAR(20) NOT NULL,
+  message TEXT,
+  brand VARCHAR(100),
+  model VARCHAR(100),
+  created_at TIMESTAMP DEFAULT NOW()
+);
+
+-- Марки
+CREATE TABLE IF NOT EXISTS brands (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  slug VARCHAR(100) UNIQUE NOT NULL,
+  logo VARCHAR(255)
+);
+
+-- Модели
+CREATE TABLE IF NOT EXISTS models (
+  id SERIAL PRIMARY KEY,
+  brand_id INTEGER REFERENCES brands(id) ON DELETE CASCADE,
+  name VARCHAR(100) NOT NULL
+);
+
+-- Отзывы
+CREATE TABLE IF NOT EXISTS reviews (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  text TEXT NOT NULL,
+  photo VARCHAR(255),
+  rating INTEGER CHECK (rating >= 1 AND rating <= 5) NOT NULL DEFAULT 5,
+  ip_address VARCHAR(45),
+  created_at TIMESTAMP DEFAULT NOW(),
+  approved BOOLEAN DEFAULT FALSE
+);

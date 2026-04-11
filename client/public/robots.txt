@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /ga-dashboard
+Disallow: /api/
+
+Sitemap: https://globalavto.ru/sitemap.xml
