@@ -20,9 +20,9 @@ export default function Home() {
     <>
       <Helmet>
         <title>Global Auto — Кузовной ремонт в Петрозаводске</title>
-        <meta name="description" content="Профессиональный кузовной ремонт в Петрозаводске. Рихтовка, покраска, ремонт кузова. Шуйское Шоссе 20Б. Тел: +7 (8142) 63-12-18" />
+        <meta name="description" content="Global Auto — кузовной ремонт в Петрозаводске. Рихтовка, покраска, ремонт после ДТП, сварка, антикор. Шуйское Шоссе 20Б. Звоните: +7 (8142) 63-12-18. Гарантия на все работы." />
         <meta property="og:title" content="Global Auto — Кузовной ремонт в Петрозаводске" />
-        <meta property="og:description" content="Профессиональный кузовной ремонт. Рихтовка, покраска, ремонт кузова." />
+        <meta property="og:description" content="Профессиональный кузовной ремонт в Петрозаводске. Рихтовка, покраска, ремонт после ДТП. Гарантия. Звоните: +7 (8142) 63-12-18" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "AutoRepair",
