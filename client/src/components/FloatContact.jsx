@@ -38,7 +38,7 @@ const contacts = [
   {
     label: 'Телефон',
     sub: '+7 (8142) 63-12-18',
-    href: 'tel:+78142631218',
+    href: 'tel:631218',
     color: '#E60023',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">

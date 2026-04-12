@@ -14,7 +14,7 @@ export default function Footer() {
 
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-white/40">
             <span>Петрозаводск, Шуйское Шоссе 20Б</span>
-            <a href="tel:+78142631218" className="hover:text-white transition-colors">+7 (8142) 63-12-18</a>
+            <a href="tel:631218" className="hover:text-white transition-colors">+7 (8142) 63-12-18</a>
             <a href="https://vk.link/globalauto_ptz" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">ВКонтакте</a>
             <a href="https://t.me/globalauto_ptz" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Telegram</a>
           </div>

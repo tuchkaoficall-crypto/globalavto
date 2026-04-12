@@ -82,7 +82,7 @@ export default function Hero({ onRequestClick }) {
               <button onClick={onRequestClick} className="btn-primary text-base px-8 py-3.5">
                 Оставить заявку
               </button>
-              <a href="tel:+78142631218" className="btn-secondary text-base px-8 py-3.5">
+              <a href="tel:631218" className="btn-secondary text-base px-8 py-3.5">
                 Позвонить
               </a>
             </motion.div>

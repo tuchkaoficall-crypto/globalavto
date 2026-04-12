@@ -217,7 +217,7 @@ export default function BrandPage() {
                   <button onClick={() => setPopupOpen(true)} className="btn-primary text-base px-8 py-3.5">
                     Оставить заявку
                   </button>
-                  <a href="tel:+78142631218" className="btn-secondary text-base px-8 py-3.5">
+                  <a href="tel:631218" className="btn-secondary text-base px-8 py-3.5">
                     Позвонить
                   </a>
                 </motion.div>
@@ -347,7 +347,7 @@ export default function BrandPage() {
               <p className="text-white/60 font-body leading-relaxed">
                 Сервис Global Auto находится по адресу: <span className="text-white">Шуйское Шоссе, 20Б, Петрозаводск</span>.
                 Работаем с 2024 года. Записаться на ремонт можно по телефону{' '}
-                <a href="tel:+78142631218" className="text-brand-red hover:underline">+7 (8142) 63-12-18</a>{' '}
+                <a href="tel:631218" className="text-brand-red hover:underline">+7 (8142) 63-12-18</a>{' '}
                 или оставив заявку на сайте.
               </p>
             </motion.div>
@@ -370,7 +370,7 @@ export default function BrandPage() {
                 <button onClick={() => setPopupOpen(true)} className="btn-primary text-base px-10 py-4">
                   Оставить заявку
                 </button>
-                <a href="tel:+78142631218" className="btn-secondary text-base px-10 py-4">
+                <a href="tel:631218" className="btn-secondary text-base px-10 py-4">
                   +7 (8142) 63-12-18
                 </a>
               </div>
@@ -383,7 +383,7 @@ export default function BrandPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
-                { href: 'tel:+78142631218', icon: '📞', label: 'Телефон', value: '+7 (8142) 63-12-18', sub: null },
+                { href: 'tel:631218', icon: '📞', label: 'Телефон', value: '+7 (8142) 63-12-18', sub: null },
                 { href: null, icon: '📍', label: 'Адрес', value: 'Шуйское Шоссе, 20Б', sub: 'Петрозаводск' },
                 { href: null, icon: '🕐', label: 'Режим работы', value: 'Пн–Пт: 10:00–19:00', sub: 'Сб–Вс: выходной' },
               ].map((c, i) => (

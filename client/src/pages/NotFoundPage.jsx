@@ -20,7 +20,7 @@ export default function NotFoundPage() {
           <p className="text-white/40 mb-8 font-body">Возможно, она была удалена или вы перешли по неверной ссылке</p>
           <div className="flex gap-4 justify-center">
             <Link to="/" className="btn-primary px-8 py-3">На главную</Link>
-            <a href="tel:+78142631218" className="btn-secondary px-8 py-3">Позвонить</a>
+            <a href="tel:631218" className="btn-secondary px-8 py-3">Позвонить</a>
           </div>
         </motion.div>
       </div>

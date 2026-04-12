@@ -36,7 +36,7 @@ export default function Contacts() {
             {/* Contact cards */}
             <div className="glass p-6 flex flex-col gap-5">
               <a
-                href="tel:+78142631218"
+                href="tel:631218"
                 className="flex items-center gap-4 group"
               >
                 <div className="w-12 h-12 rounded-xl bg-brand-red/10 flex items-center justify-center text-2xl flex-shrink-0 group-hover:bg-brand-red/20 transition-colors">
