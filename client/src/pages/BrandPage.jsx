@@ -77,9 +77,9 @@ const carImages = {
   nissan:       'https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=900&q=85',
   ford:         'https://images.unsplash.com/photo-1551830820-330a71b99659?w=900&q=85',
   chevrolet:    'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=900&q=85',
-  dodge:        'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=900&q=85',
+  dodge:        '/assets/cars/dodge.jpg',
   tesla:        'https://images.unsplash.com/photo-1560958089-b8a1929cea89?w=900&q=85',
-  geely:        'https://images.unsplash.com/photo-1629897048514-3dd7414fe72a?w=900&q=85',
+  geely:        '/assets/cars/geely.jpg',
   faw:          'https://images.unsplash.com/photo-1629897048514-3dd7414fe72a?w=900&q=85',
 }
 
