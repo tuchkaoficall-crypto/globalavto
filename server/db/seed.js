@@ -23,18 +23,14 @@ const brands = [
   { name: 'Opel',       slug: 'opel',        logo: '' },
   { name: 'Ford',       slug: 'ford',        logo: '' },
   { name: 'Chevrolet',  slug: 'chevrolet',   logo: '' },
-  { name: 'Cadillac',   slug: 'cadillac',    logo: '' },
-  { name: 'Chrysler',   slug: 'chrysler',    logo: '' },
+
   { name: 'Jeep',       slug: 'jeep',        logo: '' },
   { name: 'Dodge',      slug: 'dodge',       logo: '' },
   { name: 'Tesla',      slug: 'tesla',       logo: '' },
   { name: 'Geely',      slug: 'geely',       logo: '' },
   { name: 'Haval',      slug: 'haval',       logo: '' },
   { name: 'Chery',      slug: 'chery',       logo: '' },
-  { name: 'Lifan',      slug: 'lifan',       logo: '' },
-  { name: 'Great Wall', slug: 'great-wall',  logo: '' },
-  { name: 'BYD',        slug: 'byd',         logo: '' },
-  { name: 'FAW',        slug: 'faw',         logo: '' },
+
   { name: 'UAZ',        slug: 'uaz',         logo: '' },
   { name: 'Lada',       slug: 'lada',        logo: '' },
 ]
