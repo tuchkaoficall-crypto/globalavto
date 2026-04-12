@@ -28,7 +28,7 @@ export default function Home() {
           "@type": "AutoRepair",
           "name": "Global Auto",
           "description": "Профессиональный кузовной ремонт в Петрозаводске. Рихтовка, покраска, ремонт после ДТП.",
-          "url": "https://globalavto.ru",
+          "url": "https://globalauto.space",
           "telephone": "+78142631218",
           "address": {
             "@type": "PostalAddress",
@@ -51,7 +51,7 @@ export default function Home() {
             }
           ],
           "priceRange": "$$",
-          "image": "https://globalavto.ru/assets/LOGO4.png"
+          "image": "https://globalauto.space/assets/LOGO4.png"
         })}</script>
       </Helmet>
 
