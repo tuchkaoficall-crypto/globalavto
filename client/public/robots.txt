@@ -3,4 +3,4 @@ Allow: /
 Disallow: /ga-dashboard
 Disallow: /api/
 
-Sitemap: https://globalavto.ru/sitemap.xml
+Sitemap: https://globalauto.space/sitemap.xml
