@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import BrandPage from './pages/BrandPage'
 import RemontAvtoPage from './pages/RemontAvtoPage'
+import PricePage from './pages/PricePage'
 import AdminPage from './pages/AdminPage'
 import NotFoundPage from './pages/NotFoundPage'
 
@@ -12,6 +13,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/remont-avto" element={<RemontAvtoPage />} />
         <Route path="/remont/:slug" element={<BrandPage />} />
+        <Route path="/uslugi-i-tseny" element={<PricePage />} />
         <Route path="/ga-dashboard" element={<AdminPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>

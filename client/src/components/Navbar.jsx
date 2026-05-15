@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 const navLinks = [
   { label: 'Услуги', href: '#services' },
   { label: 'Портфолио', href: '#portfolio' },
+  { label: 'Цены', href: '/uslugi-i-tseny', isRoute: true },
   { label: 'Отзывы', href: '#reviews' },
   { label: 'Контакты', href: '#contacts' },
 ]
@@ -61,13 +62,23 @@ export default function Navbar({ onRequestClick }) {
           {/* Desktop nav */}
           <nav className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
-              <button
-                key={link.label}
-                onClick={() => handleNavClick(link.href)}
-                className="text-white/70 hover:text-white text-sm font-medium transition-colors duration-200"
-              >
-                {link.label}
-              </button>
+              link.isRoute ? (
+                <Link
+                  key={link.label}
+                  to={link.href}
+                  className="text-white/70 hover:text-white text-sm font-medium transition-colors duration-200"
+                >
+                  {link.label}
+                </Link>
+              ) : (
+                <button
+                  key={link.label}
+                  onClick={() => handleNavClick(link.href)}
+                  className="text-white/70 hover:text-white text-sm font-medium transition-colors duration-200"
+                >
+                  {link.label}
+                </button>
+              )
             ))}
           </nav>
 
@@ -111,13 +122,24 @@ export default function Navbar({ onRequestClick }) {
               className="fixed top-0 right-0 bottom-0 w-72 bg-[#111] z-50 md:hidden flex flex-col pt-20 px-6 gap-2"
             >
               {navLinks.map((link) => (
-                <button
-                  key={link.label}
-                  onClick={() => handleNavClick(link.href)}
-                  className="text-white text-lg font-medium py-3 border-b border-white/10 text-left hover:text-brand-red transition-colors"
-                >
-                  {link.label}
-                </button>
+                link.isRoute ? (
+                  <Link
+                    key={link.label}
+                    to={link.href}
+                    onClick={() => setMenuOpen(false)}
+                    className="text-white text-lg font-medium py-3 border-b border-white/10 text-left hover:text-brand-red transition-colors block"
+                  >
+                    {link.label}
+                  </Link>
+                ) : (
+                  <button
+                    key={link.label}
+                    onClick={() => handleNavClick(link.href)}
+                    className="text-white text-lg font-medium py-3 border-b border-white/10 text-left hover:text-brand-red transition-colors"
+                  >
+                    {link.label}
+                  </button>
+                )
               ))}
               <button
                 onClick={() => { setMenuOpen(false); onRequestClick() }}

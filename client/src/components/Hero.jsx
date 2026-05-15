@@ -3,16 +3,16 @@ import { motion } from 'framer-motion'
 import axios from 'axios'
 
 const fadeUp = {
-  hidden: { opacity: 0, y: 30 },
+  hidden: { opacity: 0, y: 20 },
   visible: (i = 0) => ({
     opacity: 1, y: 0,
-    transition: { duration: 0.6, delay: i * 0.15, ease: 'easeOut' }
+    transition: { duration: 0.5, delay: i * 0.12, ease: 'easeOut' }
   })
 }
 
 const carSlide = {
-  hidden: { x: 160, opacity: 0 },
-  visible: { x: 0, opacity: 1, transition: { duration: 1, ease: 'easeOut', delay: 0.3 } }
+  hidden: { x: 60, opacity: 0 },
+  visible: { x: 0, opacity: 1, transition: { duration: 0.8, ease: 'easeOut', delay: 0.2 } }
 }
 
 export default function Hero({ onRequestClick }) {

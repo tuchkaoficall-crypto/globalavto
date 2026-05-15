@@ -27,6 +27,9 @@ export default function Footer() {
           <Link to="/remont-avto" className="text-white/20 hover:text-white/50 text-xs transition-colors">
             Кузовной ремонт в Петрозаводске
           </Link>
+          <Link to="/uslugi-i-tseny" className="text-white/20 hover:text-white/50 text-xs transition-colors">
+            Цены на кузовной ремонт
+          </Link>
           {['toyota', 'bmw', 'mercedes', 'kia', 'hyundai', 'geely', 'lada'].map(slug => (
             <Link key={slug} to={`/remont/${slug}`} className="text-white/20 hover:text-white/50 text-xs transition-colors capitalize">
               Ремонт {slug}

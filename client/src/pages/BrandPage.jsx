@@ -44,6 +44,41 @@ const brandSeoText = {
   lada:       'Lada — народный российский автомобиль. Ремонтируем Vesta, Granta, Niva, XRAY и Largus. Быстро и качественно восстанавливаем кузов по доступным ценам.',
 }
 
+// Уникальные данные для каждой марки: популярные модели + особенности ремонта
+const brandUniqueData = {
+  toyota:     { models: ['Camry', 'Corolla', 'RAV4', 'Land Cruiser', 'Highlander'], feature: 'Особенность: многослойное лакокрасочное покрытие Toyota требует точного подбора цвета по VIN-коду. Используем только сертифицированные материалы.' },
+  bmw:        { models: ['3 Series', '5 Series', 'X3', 'X5', 'X6'], feature: 'Особенность: кузова BMW часто имеют алюминиевые элементы. Работаем со специальным оборудованием для алюминия без деформаций.' },
+  mercedes:   { models: ['C-Class', 'E-Class', 'GLC', 'GLE', 'S-Class'], feature: 'Особенность: Mercedes использует многослойные покрытия с эффектом металлик. Подбираем цвет спектрофотометром для идеального совпадения.' },
+  audi:       { models: ['A4', 'A6', 'Q5', 'Q7', 'A3'], feature: 'Особенность: Audi активно использует алюминий в кузове. Наши мастера прошли обучение по работе с алюминиевыми кузовными панелями.' },
+  volkswagen: { models: ['Polo', 'Tiguan', 'Golf', 'Passat', 'Touareg'], feature: 'Особенность: кузова VW отличаются высокой жёсткостью. При ремонте после ДТП обязательно проверяем геометрию на стапеле.' },
+  skoda:      { models: ['Octavia', 'Kodiaq', 'Karoq', 'Superb', 'Fabia'], feature: 'Особенность: Skoda использует те же платформы, что и VW. Имеем опыт работы с кузовами на платформах MQB и PQ35.' },
+  kia:        { models: ['Rio', 'Sportage', 'Ceed', 'Sorento', 'K5'], feature: 'Особенность: современные Kia имеют высокопрочную сталь в силовых элементах. Используем правильные режимы сварки и вытяжки.' },
+  hyundai:    { models: ['Solaris', 'Creta', 'Tucson', 'Santa Fe', 'Elantra'], feature: 'Особенность: Hyundai Solaris и Creta — самые частые гости нашего сервиса. Знаем все типичные повреждения и быстро их устраняем.' },
+  nissan:     { models: ['Qashqai', 'X-Trail', 'Juke', 'Murano', 'Almera'], feature: 'Особенность: кузова Nissan имеют специфическую геометрию дверных проёмов. Проверяем зазоры по всему периметру после ремонта.' },
+  mazda:      { models: ['CX-5', 'Mazda3', 'Mazda6', 'CX-9', 'CX-30'], feature: 'Особенность: фирменный цвет Soul Red Crystal требует особой технологии нанесения. Имеем опыт точного воспроизведения этого оттенка.' },
+  mitsubishi: { models: ['Outlander', 'Eclipse Cross', 'Pajero', 'L200', 'ASX'], feature: 'Особенность: внедорожники Mitsubishi часто имеют повреждения порогов и арок. Специализируемся на антикоррозийной защите после ремонта.' },
+  honda:      { models: ['CR-V', 'Civic', 'Accord', 'HR-V', 'Pilot'], feature: 'Особенность: Honda использует высокопрочную сталь UHSS. При замене элементов строго соблюдаем технологию сварки производителя.' },
+  lexus:      { models: ['RX', 'NX', 'ES', 'IS', 'LX'], feature: 'Особенность: Lexus — премиальный бренд с жёсткими стандартами качества. Используем только оригинальные или сертифицированные материалы.' },
+  infiniti:   { models: ['QX60', 'QX50', 'Q50', 'QX80', 'Q60'], feature: 'Особенность: Infiniti разделяет платформы с Nissan, но имеет более сложные кузовные линии. Уделяем особое внимание точности зазоров.' },
+  subaru:     { models: ['Forester', 'Outback', 'XV', 'Impreza', 'Legacy'], feature: 'Особенность: Subaru часто страдает от коррозии арок и порогов. После ремонта обязательно проводим антикоррозийную обработку.' },
+  suzuki:     { models: ['Vitara', 'SX4', 'Swift', 'Jimny', 'Grand Vitara'], feature: 'Особенность: компактные кузова Suzuki требуют аккуратной работы с небольшими элементами. Специализируемся на точечной рихтовке.' },
+  renault:    { models: ['Duster', 'Logan', 'Sandero', 'Kaptur', 'Arkana'], feature: 'Особенность: Renault Duster и Kaptur популярны в Карелии. Знаем типичные повреждения этих моделей и быстро их устраняем.' },
+  peugeot:    { models: ['3008', '2008', '408', '308', '508'], feature: 'Особенность: французские автомобили имеют специфическую геометрию кузова. Используем специализированные стапельные карты для Peugeot.' },
+  citroen:    { models: ['C4', 'C3', 'Berlingo', 'C5 Aircross', 'Jumper'], feature: 'Особенность: Citroen и Peugeot используют общие платформы. Имеем опыт работы с кузовами PSA Group.' },
+  opel:       { models: ['Astra', 'Mokka', 'Insignia', 'Zafira', 'Corsa'], feature: 'Особенность: Opel использует платформы GM. Знаем особенности крепления кузовных элементов и точки измерения геометрии.' },
+  ford:       { models: ['Focus', 'Kuga', 'Explorer', 'Mondeo', 'Mustang'], feature: 'Особенность: Ford Focus — один из самых популярных автомобилей в России. Имеем большой опыт ремонта этой модели.' },
+  chevrolet:  { models: ['Cruze', 'Captiva', 'Tahoe', 'Aveo', 'Camaro'], feature: 'Особенность: американские Chevrolet имеют массивные кузовные элементы. Работаем с тяжёлыми деталями на профессиональном оборудовании.' },
+  'range-rover': { models: ['Range Rover Sport', 'Evoque', 'Defender', 'Discovery', 'Velar'], feature: 'Особенность: Range Rover использует алюминиевый кузов. Работаем только с сертифицированными материалами для алюминиевых конструкций.' },
+  jeep:       { models: ['Grand Cherokee', 'Wrangler', 'Cherokee', 'Compass', 'Renegade'], feature: 'Особенность: Jeep Wrangler имеет рамную конструкцию. Специализируемся на ремонте кузовных элементов без затрагивания рамы.' },
+  dodge:      { models: ['Charger', 'Challenger', 'Durango', 'Journey', 'Ram'], feature: 'Особенность: американские масл-кары Dodge имеют широкие кузовные панели. Работаем с большими элементами на профессиональном стапеле.' },
+  tesla:      { models: ['Model 3', 'Model Y', 'Model S', 'Model X', 'Cybertruck'], feature: 'Особенность: Tesla использует алюминиевый кузов и высокопрочную сталь. Требует специального оборудования и знания электробезопасности.' },
+  geely:      { models: ['Coolray', 'Atlas Pro', 'Tugella', 'Monjaro', 'Emgrand'], feature: 'Особенность: современные Geely имеют качественное ЛКП. Подбираем цвет по коду для точного совпадения оттенка.' },
+  haval:      { models: ['Jolion', 'F7', 'H6', 'Dargo', 'F7x'], feature: 'Особенность: Haval активно набирает популярность в России. Имеем опыт работы с кузовами всех актуальных моделей.' },
+  chery:      { models: ['Tiggo 7 Pro', 'Tiggo 4 Pro', 'Tiggo 8 Pro', 'Arrizo 5', 'Arrizo 8'], feature: 'Особенность: китайские автомобили Chery имеют доступные запчасти. Быстро восстанавливаем кузов с минимальными затратами.' },
+  uaz:        { models: ['Patriot', 'Hunter', 'Буханка', 'Pickup', 'Cargo'], feature: 'Особенность: УАЗ имеет рамную конструкцию и простой кузов. Специализируемся на антикоррозийной защите и сварочных работах.' },
+  lada:       { models: ['Vesta', 'Granta', 'Niva Travel', 'XRAY', 'Largus'], feature: 'Особенность: Lada — самый доступный ремонт благодаря низкой стоимости запчастей. Быстро восстанавливаем кузов в короткие сроки.' },
+}
+
 // Фото авто — локальные файлы + Unsplash для остальных
 const carImages = {
   // Локальные файлы (загружены)
@@ -159,6 +194,7 @@ export default function BrandPage() {
   const brandName = brand?.name || slug?.toUpperCase()
   const carImg = carImages[slug] || defaultCarImg
   const seoText = brandSeoText[slug] || `Профессиональный кузовной ремонт ${brandName} в Петрозаводске. Рихтовка, покраска, ремонт после ДТП. Опытные мастера, современное оборудование, гарантия на все работы.`
+  const uniqueData = brandUniqueData[slug] || null
 
   return (
     <>
@@ -344,7 +380,29 @@ export default function BrandPage() {
                 Кузовной ремонт {brandName} в Петрозаводске
               </h2>
               <p className="text-white/60 font-body leading-relaxed mb-4">{seoText}</p>
-              <p className="text-white/60 font-body leading-relaxed">
+
+              {/* Популярные модели */}
+              {uniqueData && (
+                <div className="mb-4">
+                  <p className="text-white/80 font-body font-semibold mb-2">Популярные модели {brandName}:</p>
+                  <div className="flex flex-wrap gap-2">
+                    {uniqueData.models.map(model => (
+                      <span key={model} className="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-white/60 text-sm font-body">
+                        {brandName} {model}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Особенность ремонта */}
+              {uniqueData && (
+                <div className="mt-4 p-4 rounded-lg bg-brand-red/5 border border-brand-red/20">
+                  <p className="text-white/70 font-body text-sm leading-relaxed">{uniqueData.feature}</p>
+                </div>
+              )}
+
+              <p className="text-white/60 font-body leading-relaxed mt-4">
                 Сервис Global Auto находится по адресу: <span className="text-white">Шуйское Шоссе, 20Б, Петрозаводск</span>.
                 Работаем с 2024 года. Записаться на ремонт можно по телефону{' '}
                 <a href="tel:631218" className="text-brand-red hover:underline">+7 (8142) 63-12-18</a>{' '}
