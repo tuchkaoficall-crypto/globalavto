@@ -2,48 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://globalauto.space/</loc>
+    <lastmod>2026-05-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://globalauto.space/remont-avto</loc>
+    <lastmod>2026-05-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://globalauto.space/uslugi-i-tseny</loc>
+    <lastmod>2026-05-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-  <url><loc>https://globalauto.space/remont/toyota</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://globalauto.space/remont/bmw</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://globalauto.space/remont/mercedes</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://globalauto.space/remont/audi</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://globalauto.space/remont/volkswagen</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://globalauto.space/remont/skoda</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://globalauto.space/remont/kia</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://globalauto.space/remont/hyundai</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://globalauto.space/remont/nissan</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://globalauto.space/remont/mazda</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://globalauto.space/remont/mitsubishi</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://globalauto.space/remont/honda</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://globalauto.space/remont/lexus</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://globalauto.space/remont/infiniti</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://globalauto.space/remont/subaru</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://globalauto.space/remont/suzuki</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://globalauto.space/remont/renault</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://globalauto.space/remont/peugeot</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://globalauto.space/remont/citroen</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://globalauto.space/remont/opel</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://globalauto.space/remont/ford</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://globalauto.space/remont/chevrolet</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://globalauto.space/remont/range-rover</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://globalauto.space/remont/jeep</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://globalauto.space/remont/dodge</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://globalauto.space/remont/tesla</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://globalauto.space/remont/geely</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://globalauto.space/remont/haval</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://globalauto.space/remont/chery</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://globalauto.space/remont/uaz</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://globalauto.space/remont/lada</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://globalauto.space/remont/toyota</loc><lastmod>2026-05-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://globalauto.space/remont/bmw</loc><lastmod>2026-05-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://globalauto.space/remont/mercedes</loc><lastmod>2026-05-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://globalauto.space/remont/audi</loc><lastmod>2026-05-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://globalauto.space/remont/volkswagen</loc><lastmod>2026-05-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://globalauto.space/remont/skoda</loc><lastmod>2026-05-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://globalauto.space/remont/kia</loc><lastmod>2026-05-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://globalauto.space/remont/hyundai</loc><lastmod>2026-05-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://globalauto.space/remont/nissan</loc><lastmod>2026-05-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://globalauto.space/remont/mazda</loc><lastmod>2026-05-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://globalauto.space/remont/mitsubishi</loc><lastmod>2026-05-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://globalauto.space/remont/honda</loc><lastmod>2026-05-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://globalauto.space/remont/lexus</loc><lastmod>2026-05-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://globalauto.space/remont/infiniti</loc><lastmod>2026-05-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://globalauto.space/remont/subaru</loc><lastmod>2026-05-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://globalauto.space/remont/suzuki</loc><lastmod>2026-05-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://globalauto.space/remont/renault</loc><lastmod>2026-05-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://globalauto.space/remont/peugeot</loc><lastmod>2026-05-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://globalauto.space/remont/citroen</loc><lastmod>2026-05-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://globalauto.space/remont/opel</loc><lastmod>2026-05-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://globalauto.space/remont/ford</loc><lastmod>2026-05-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://globalauto.space/remont/chevrolet</loc><lastmod>2026-05-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://globalauto.space/remont/range-rover</loc><lastmod>2026-05-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://globalauto.space/remont/jeep</loc><lastmod>2026-05-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://globalauto.space/remont/dodge</loc><lastmod>2026-05-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://globalauto.space/remont/tesla</loc><lastmod>2026-05-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://globalauto.space/remont/geely</loc><lastmod>2026-05-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://globalauto.space/remont/haval</loc><lastmod>2026-05-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://globalauto.space/remont/chery</loc><lastmod>2026-05-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://globalauto.space/remont/uaz</loc><lastmod>2026-05-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://globalauto.space/remont/lada</loc><lastmod>2026-05-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>
