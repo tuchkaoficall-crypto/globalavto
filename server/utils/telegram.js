@@ -1,5 +1,4 @@
 const https = require('https')
-const http = require('http')
 
 function sendTelegram(message) {
   const token = process.env.TELEGRAM_BOT_TOKEN
@@ -12,17 +11,17 @@ function sendTelegram(message) {
     parse_mode: 'HTML',
   })
 
-  // Пробуем через IPv4 явно
+  // Используем прямой IPv4 адрес api.telegram.org чтобы избежать IPv6
   const options = {
-    hostname: 'api.telegram.org',
+    hostname: '149.154.166.110',
     path: `/bot${token}/sendMessage`,
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
       'Content-Length': Buffer.byteLength(body),
+      'Host': 'api.telegram.org',
     },
-    family: 4, // принудительно IPv4
-    timeout: 10000,
+    timeout: 15000,
   }
 
   const req = https.request(options, (res) => {
