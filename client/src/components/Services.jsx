@@ -181,12 +181,32 @@ export default function Services({ onRequestClick }) {
                   {selected.details}
                 </p>
 
-                {/* Placeholder для фото */}
+                {/* Фото работ */}
                 <div className="rounded-lg overflow-hidden mb-6">
                   {selected.title === 'Покраска автомобиля' ? (
                     <div className="grid grid-cols-2 gap-2">
-                      <img src="/assets/raboti/pokraska.png" alt="Покраска" className="w-full h-32 object-cover rounded-lg" />
-                      <img src="/assets/raboti/pokraska2.png" alt="Покраска 2" className="w-full h-32 object-cover rounded-lg" />
+                      <img src="/assets/portfolio/pokraska/photo_5204233360744583638_w.jpg" alt="Покраска" className="w-full h-32 object-cover rounded-lg" />
+                      <img src="/assets/portfolio/pokraska/photo_5204233360744583641_w.jpg" alt="Покраска 2" className="w-full h-32 object-cover rounded-lg" />
+                    </div>
+                  ) : selected.title === 'Полировка' ? (
+                    <div className="grid grid-cols-2 gap-2">
+                      <img src="/assets/portfolio/polirovka/photo_5201935746514754045_w.jpg" alt="Полировка" className="w-full h-32 object-cover rounded-lg" />
+                      <img src="/assets/portfolio/polirovka/photo_5204233360744583627_w.jpg" alt="Полировка 2" className="w-full h-32 object-cover rounded-lg" />
+                    </div>
+                  ) : selected.title === 'Ремонт кузова' ? (
+                    <div className="grid grid-cols-2 gap-2">
+                      <img src="/assets/portfolio/remontkuzova/photo_5204233360744583628_w.jpg" alt="Ремонт кузова" className="w-full h-32 object-cover rounded-lg" />
+                      <img src="/assets/portfolio/remontkuzova/photo_5204233360744583631_w.jpg" alt="Ремонт кузова 2" className="w-full h-32 object-cover rounded-lg" />
+                    </div>
+                  ) : selected.title === 'Замена порогов' ? (
+                    <div className="grid grid-cols-2 gap-2">
+                      <img src="/assets/portfolio/zamena/photo_5204233360744583628_w.jpg" alt="Замена порогов" className="w-full h-32 object-cover rounded-lg" />
+                      <img src="/assets/portfolio/zamena/photo_5204233360744583630_w.jpg" alt="Замена порогов 2" className="w-full h-32 object-cover rounded-lg" />
+                    </div>
+                  ) : selected.title === 'Рихтовка кузова' ? (
+                    <div className="grid grid-cols-2 gap-2">
+                      <img src="/assets/portfolio/shkoda/photo_5201935746514754043_w.jpg" alt="Рихтовка" className="w-full h-32 object-cover rounded-lg" />
+                      <img src="/assets/portfolio/shkoda/photo_5201935746514754046_w.jpg" alt="Рихтовка 2" className="w-full h-32 object-cover rounded-lg" />
                     </div>
                   ) : (
                     <div className="border border-white/10 bg-white/5 h-32 rounded-lg flex items-center justify-center">

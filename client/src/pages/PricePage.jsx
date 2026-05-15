@@ -11,7 +11,15 @@ const priceCategories = [
   {
     id: 'pokraska',
     title: 'Покраска',
-    icon: '🎨',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
+        <circle cx="13.5" cy="6.5" r=".5" fill="currentColor" />
+        <circle cx="17.5" cy="10.5" r=".5" fill="currentColor" />
+        <circle cx="8.5" cy="7.5" r=".5" fill="currentColor" />
+        <circle cx="6.5" cy="12.5" r=".5" fill="currentColor" />
+        <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 011.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z" />
+      </svg>
+    ),
     color: 'from-blue-500/20 to-blue-500/5',
     borderColor: 'border-blue-500/30',
     accentColor: 'text-blue-400',
@@ -30,7 +38,11 @@ const priceCategories = [
   {
     id: 'rihtovka',
     title: 'Рихтовка и ремонт',
-    icon: '🔧',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
+        <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z" />
+      </svg>
+    ),
     color: 'from-brand-red/20 to-brand-red/5',
     borderColor: 'border-brand-red/30',
     accentColor: 'text-brand-red',
@@ -48,7 +60,11 @@ const priceCategories = [
   {
     id: 'geometriya',
     title: 'Геометрия и стапель',
-    icon: '📐',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
+        <path d="M2 20h20M6 20V10l6-6 6 6v10M10 20v-5h4v5" />
+      </svg>
+    ),
     color: 'from-yellow-500/20 to-yellow-500/5',
     borderColor: 'border-yellow-500/30',
     accentColor: 'text-yellow-400',
@@ -64,7 +80,12 @@ const priceCategories = [
   {
     id: 'dopolnitelno',
     title: 'Дополнительные услуги',
-    icon: '✨',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
+        <circle cx="12" cy="12" r="10" />
+        <path d="M12 8v4l3 3" />
+      </svg>
+    ),
     color: 'from-purple-500/20 to-purple-500/5',
     borderColor: 'border-purple-500/30',
     accentColor: 'text-purple-400',
@@ -172,7 +193,9 @@ export default function PricePage() {
 
             {/* Бесплатная оценка */}
             <div className="mt-6 inline-flex items-center gap-3 bg-brand-red/10 border border-brand-red/30 rounded-xl px-5 py-3">
-              <span className="text-2xl">🔍</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="#E60023" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6 flex-shrink-0">
+                <circle cx="11" cy="11" r="8" /><path d="M21 21l-4.35-4.35" />
+              </svg>
               <div>
                 <p className="text-white font-semibold font-body">Бесплатная оценка и дефектовка</p>
                 <p className="text-white/50 text-sm font-body">Привезите авто — осмотрим и назовём точную цену за 15 минут</p>
@@ -193,7 +216,7 @@ export default function PricePage() {
               >
                 {/* Заголовок категории */}
                 <div className="px-6 py-5 border-b border-white/5 flex items-center gap-3">
-                  <span className="text-2xl">{cat.icon}</span>
+                  <div className={cat.accentColor}>{cat.icon}</div>
                   <h2 className={`font-heading text-2xl uppercase tracking-wide ${cat.accentColor}`}>
                     {cat.title}
                   </h2>
@@ -234,7 +257,9 @@ export default function PricePage() {
             transition={{ duration: 0.5 }}
             className="glass p-6 mb-16 flex gap-4"
           >
-            <span className="text-2xl flex-shrink-0">ℹ️</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6 flex-shrink-0 text-white/40 mt-0.5">
+              <circle cx="12" cy="12" r="10" /><line x1="12" y1="8" x2="12" y2="12" /><line x1="12" y1="16" x2="12.01" y2="16" />
+            </svg>
             <div>
               <p className="text-white font-semibold font-body mb-1">Важно знать</p>
               <p className="text-white/60 text-sm font-body leading-relaxed">
