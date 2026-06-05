@@ -191,7 +191,41 @@ export default function BrandPage() {
   const [popupOpen, setPopupOpen] = useState(false)
 
   const brand = brands.find(b => b.slug === slug)
-  const brandName = brand?.name || slug?.toUpperCase()
+
+  // Если марка не найдена — показываем 404
+  if (!brand) {
+    return (
+      <>
+        <Helmet>
+          <title>Страница не найдена | Global Auto</title>
+          <meta name="robots" content="noindex, nofollow" />
+        </Helmet>
+        <Navbar onRequestClick={() => {}} />
+        <main className="min-h-screen bg-brand-bg flex items-center justify-center">
+          <div className="text-center px-4">
+            <div className="font-heading text-8xl text-brand-red mb-4">404</div>
+            <h1 className="font-heading text-3xl text-white uppercase tracking-wide mb-4">
+              Марка не найдена
+            </h1>
+            <p className="text-white/50 font-body mb-8">
+              Такой марки автомобиля нет в нашем списке
+            </p>
+            <div className="flex flex-wrap gap-4 justify-center">
+              <Link to="/remont-avto" className="btn-primary px-8 py-3">
+                Все марки
+              </Link>
+              <Link to="/" className="btn-secondary px-8 py-3">
+                На главную
+              </Link>
+            </div>
+          </div>
+        </main>
+        <Footer />
+      </>
+    )
+  }
+
+  const brandName = brand.name
   const carImg = carImages[slug] || defaultCarImg
   const seoText = brandSeoText[slug] || `Профессиональный кузовной ремонт ${brandName} в Петрозаводске. Рихтовка, покраска, ремонт после ДТП. Опытные мастера, современное оборудование, гарантия на все работы.`
   const uniqueData = brandUniqueData[slug] || null

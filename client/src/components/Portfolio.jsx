@@ -5,8 +5,8 @@ const categories = ['Все', 'Ремонт кузова', 'Покраска', '
 
 const works = [
   // Шкода
-  { id: 1,  title: 'Ремонт кузова Skoda',     desc: 'Восстановление кузова после ДТП — рихтовка и покраска',         tag: 'Ремонт кузова',    img: '/assets/portfolio/shkoda/photo_5201935746514754043_w.jpg' },
-  { id: 2,  title: 'Ремонт кузова Skoda',     desc: 'Устранение деформации кузовных панелей',                         tag: 'Ремонт кузова',    img: '/assets/portfolio/shkoda/photo_5201935746514754044_w.jpg' },
+  { id: 1,  title: 'Ремонт кузова Skoda',     desc: 'Восстановление кузова после ДТП — рихтовка и покраска',         tag: 'Ремонт кузова',    img: '/assets/portfolio/shkoda/skoda2.jpg' },
+  { id: 2,  title: 'Ремонт кузова Skoda',     desc: 'Устранение деформации кузовных панелей',                         tag: 'Ремонт кузова',    img: '/assets/portfolio/shkoda/skoda2.jpg' },
   { id: 3,  title: 'Ремонт кузова Skoda',     desc: 'Восстановление геометрии кузова на стапеле',                     tag: 'Ремонт кузова',    img: '/assets/portfolio/shkoda/photo_5201935746514754045_w.jpg' },
   { id: 4,  title: 'Ремонт кузова Skoda',     desc: 'Финальный результат — кузов как новый',                          tag: 'Ремонт кузова',    img: '/assets/portfolio/shkoda/photo_5201935746514754046_w.jpg' },
   { id: 5,  title: 'Покраска Skoda',          desc: 'Профессиональная покраска в камере с подбором цвета',            tag: 'Покраска',         img: '/assets/portfolio/shkoda/photo_5204233360744583625_w.jpg' },

@@ -40,7 +40,7 @@ const services = [
   {
     title: 'Ремонт кузова',
     desc: 'Комплексный ремонт кузова после ДТП, восстановление геометрии',
-    details: 'Комплексный ремонт после ДТП включает: оценку повреждений, восстановление геометрии кузова на стапеле, замену или ремонт повреждённых элементов, рихтовку и покраску. Работаем со страховыми компаниями, предоставляем все необходимые документы.',
+    details: 'Комплексный ремонт после ДТП включает: оценку повреждений, восстановление геометрии кузова на стапеле, замену или ремонт повреждённых элементов, рихтовку и покраску. Работаем напрямую с владельцами автомобилей, предоставляем все необходимые документы.',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-7 h-7">
         <rect x="2" y="7" width="20" height="14" rx="2" />
@@ -205,7 +205,7 @@ export default function Services({ onRequestClick }) {
                     </div>
                   ) : selected.title === 'Рихтовка кузова' ? (
                     <div className="grid grid-cols-2 gap-2">
-                      <img src="/assets/portfolio/shkoda/photo_5201935746514754043_w.jpg" alt="Рихтовка" className="w-full h-32 object-cover rounded-lg" />
+                      <img src="/assets/portfolio/shkoda/skoda2.jpg" alt="Рихтовка" className="w-full h-32 object-cover rounded-lg" />
                       <img src="/assets/portfolio/shkoda/photo_5201935746514754046_w.jpg" alt="Рихтовка 2" className="w-full h-32 object-cover rounded-lg" />
                     </div>
                   ) : (
