@@ -4,7 +4,9 @@
   "type": "commonjs",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "setup-monitoring": "node setup-monitoring.js",
+    "test-telegram": "node test-telegram.js"
   },
   "dependencies": {
     "cors": "^2.8.5",

@@ -5,7 +5,7 @@ const path = require('path')
 const fs = require('fs')
 const pool = require('../db')
 const { reviewsLimiter } = require('../middleware/rateLimit')
-const { sendTelegram } = require('../utils/telegram')
+const { bot } = require('../utils/telegramBot')
 const cache = require('../utils/cache')
 const { fromFile } = require('file-type')
 
@@ -86,13 +86,20 @@ router.post('/', reviewsLimiter, upload.single('photo'), async (req, res) => {
 
     await pool.query(
       `INSERT INTO reviews (name, text, photo, rating, ip_address)
-       VALUES ($1, $2, $3, $4, $5)`,
+       VALUES ($1, $2, $3, $4, $5) RETURNING id, created_at`,
       [safeName, safeText, photoName, ratingNum, ip]
-    )
-
-    // Уведомление в Telegram
-    const stars = '★'.repeat(ratingNum) + '☆'.repeat(5 - ratingNum)
-    sendTelegram(`💬 <b>Новый отзыв на модерации!</b>\n👤 <b>${safeName}</b> ${stars}\n📝 ${safeText.substring(0, 200)}${safeText.length > 200 ? '...' : ''}`)
+    ).then(result => {
+      // Уведомление в Telegram
+      bot.notifyNewReview({
+        id: result.rows[0].id,
+        name: safeName,
+        text: safeText,
+        photo: photoName,
+        rating: ratingNum,
+        ip_address: ip,
+        created_at: result.rows[0].created_at
+      })
+    })
 
     res.status(201).json({ success: true, message: 'Отзыв отправлен на модерацию' })
   } catch (err) {

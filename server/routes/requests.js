@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 const pool = require('../db')
 const { requestsLimiter } = require('../middleware/rateLimit')
-const { sendTelegram } = require('../utils/telegram')
+const { bot } = require('../utils/telegramBot')
 
 // POST /api/requests
 router.post('/', requestsLimiter, async (req, res) => {
@@ -26,20 +26,20 @@ router.post('/', requestsLimiter, async (req, res) => {
 
     const result = await pool.query(
       `INSERT INTO requests (name, phone, message, brand, model)
-       VALUES ($1, $2, $3, $4, $5) RETURNING id`,
+       VALUES ($1, $2, $3, $4, $5) RETURNING id, created_at`,
       [safeName, safePhone, safeMessage, safeBrand, safeModel]
     )
 
     // Уведомление в Telegram
-    const lines = [
-      '🔔 <b>Новая заявка!</b>',
-      `👤 <b>Имя:</b> ${safeName}`,
-      `📞 <b>Телефон:</b> ${safePhone}`,
-    ]
-    if (safeBrand) lines.push(`🚗 <b>Авто:</b> ${safeBrand}${safeModel ? ' ' + safeModel : ''}`)
-    if (safeMessage) lines.push(`💬 <b>Комментарий:</b> ${safeMessage}`)
-    lines.push(`🆔 <b>ID заявки:</b> #${result.rows[0].id}`)
-    sendTelegram(lines.join('\n'))
+    bot.notifyNewRequest({
+      id: result.rows[0].id,
+      name: safeName,
+      phone: safePhone,
+      message: safeMessage,
+      brand: safeBrand,
+      model: safeModel,
+      created_at: result.rows[0].created_at
+    })
 
     res.status(201).json({ success: true, id: result.rows[0].id })
   } catch (err) {

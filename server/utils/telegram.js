@@ -1,6 +1,11 @@
 const https = require('https')
 
+// DEPRECATED: Используйте utils/telegramBot.js
+// Этот файл оставлен для обратной совместимости
+
 function sendTelegram(message) {
+  console.warn('⚠️ sendTelegram is deprecated, use bot from utils/telegramBot.js')
+  
   const token = process.env.TELEGRAM_BOT_TOKEN
   const chatId = process.env.TELEGRAM_CHAT_ID
   if (!token || !chatId) return

@@ -4,6 +4,7 @@ const jwt = require('jsonwebtoken')
 const pool = require('../db')
 const cache = require('../utils/cache')
 const { loginLimiter } = require('../middleware/rateLimit')
+const { logAdminLogin, getStats } = require('../middleware/logger')
 
 const JWT_SECRET = process.env.JWT_SECRET
 const JWT_EXPIRES = '8h'
@@ -27,7 +28,7 @@ function authMiddleware(req, res, next) {
 }
 
 // POST /api/ga-auth/login
-router.post('/login', loginLimiter, (req, res) => {
+router.post('/login', loginLimiter, logAdminLogin, (req, res) => {
   const { login, password } = req.body
   if (
     login === process.env.ADMIN_LOGIN &&
@@ -120,6 +121,31 @@ router.get('/stats', authMiddleware, async (req, res) => {
       approvedReviews: parseInt(reviews.rows[0].count),
       pendingReviews: parseInt(pendingReviews.rows[0].count),
     })
+  } catch (err) {
+    res.status(500).json({ error: 'Ошибка сервера' })
+  }
+})
+
+// GET /api/ga-auth/activity-stats — статистика активности
+router.get('/activity-stats', authMiddleware, async (req, res) => {
+  try {
+    const hours = parseInt(req.query.hours) || 24
+    const stats = await getStats(hours)
+    res.json(stats || { error: 'Failed to get stats' })
+  } catch (err) {
+    res.status(500).json({ error: 'Ошибка сервера' })
+  }
+})
+
+// GET /api/ga-auth/activity-logs — последние логи
+router.get('/activity-logs', authMiddleware, async (req, res) => {
+  try {
+    const limit = parseInt(req.query.limit) || 50
+    const result = await pool.query(
+      'SELECT * FROM activity_logs ORDER BY created_at DESC LIMIT $1',
+      [limit]
+    )
+    res.json(result.rows)
   } catch (err) {
     res.status(500).json({ error: 'Ошибка сервера' })
   }
